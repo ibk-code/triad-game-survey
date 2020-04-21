@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>The Triad Game</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  </head>
+  <body>
+    <!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    <div class="game-wrapper container p-5">
+      <h1 class="text-center text-white">THE TRIAD</h1>
+      <div class="game-box bg-white shadow rounded p-4 mt-5">
+        <div class="game-header d-flex justify-content-around">
+          <p class="btn-play"  tabindex="0" role="button" aria-pressed="false"><i class="fas fa-play"></i> Play</p>
+          <p class="btn-play">Score: <span>10</span></p>
+          <p class="btn-play">Life: <span>3</span></p>
+        </div>
+        <p class="mt-2 text-center">instruction: Get the context of the triad display below</p>
+        <div class="game">
+          <p class="question">
+            <i class="fas fa-volume-up speak"  tabindex="0" role="button" aria-pressed="false"></i>
+            <!-- <span class="word">SALT</span>
+            <span class="word">SAND</span>
+            <span class="word">WAVE</span> -->
+          </p>
+        </div>
+        <div class="option-wrap pt-1">
+          <ul class="option-list">
+            <!-- <li>River</li>
+            <li>Sky</li>
+            <li>Sea</li> -->
+          </ul>
+        </div>
+      </div>
+    </div>
+    
+    <script src="game.js" async></script>
+  </body>
+</html>
