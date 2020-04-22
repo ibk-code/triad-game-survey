@@ -11,19 +11,19 @@ import QuestionStore from './QuestionStore'
 let speaker =  $('.speak'); 
 let questElem =  $('.question');
 let optionList =  $('.option-list');
+let words = document.getElementsByClassName('word');
 console.log(questElem)
 
-function speakerClick (elem, func) {
+function speakerClick (elem, func, words) {
   // if(words){
     elem.on('click', 'i', () => {
       // when working test with getelementbyclassname
-      let words = document.querySelectorAll('.word');
       func(words);
       console.log(words)
     })
 
     elem.on('keydown', 'i', event => {
-      let words = document.querySelectorAll('.word');
+      // let words = document.querySelectorAll('.word');
       if (event.isComposing || event.keyCode === 13) {
         func(words);
       }
@@ -67,7 +67,7 @@ let question = new QuestionStore();
 
 let generatedQuest = question.generateQuestion();
 
-speakerClick(questElem, speak);
+speakerClick(questElem, speak, words);
 
 loadElem("question", generatedQuest.triadWord, 'span', 'word')
 loadElem("option-list", generatedQuest.options, 'li', 'option')
