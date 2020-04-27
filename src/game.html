@@ -20,29 +20,40 @@
       <h1 class="text-center text-white">THE TRIAD</h1>
       <div class="game-box bg-white shadow rounded p-4 mt-5">
         <div class="game-header d-flex justify-content-around">
-          <p class="btn-play"  tabindex="0" role="button" aria-pressed="false"><i class="fas fa-play"></i> Play</p>
-          <p class="btn-play">Score: <span>10</span></p>
+          <p class="btn-play" id="btn-play"  tabindex="0" role="button" aria-pressed="false"><i class="fas fa-play"></i> Play</p>
+          <p class="btn-play">Score: <span id="game-score">0</span></p>
           <p class="btn-play">Life: <span>3</span></p>
+          <p class="btn-play">Timer: <span id="timer"></span></p>
         </div>
         <p class="mt-2 text-center">instruction: Get the context of the triad display below</p>
         <div class="game">
-          <p class="question">
+          <p class="question-wrap">
             <i class="fas fa-volume-up speak"  tabindex="0" role="button" aria-pressed="false"></i>
+            <span class="question"></span>
             <!-- <span class="word">SALT</span>
             <span class="word">SAND</span>
             <span class="word">WAVE</span> -->
           </p>
         </div>
         <div class="option-wrap pt-1">
-          <ul class="option-list">
+          <div class="option-list">
             <!-- <li>River</li>
             <li>Sky</li>
             <li>Sea</li> -->
-          </ul>
+          </div>
         </div>
       </div>
     </div>
-    
+    <div class="game-modal-wrap" role="dialog" aria-modal="true" aria-label="Game state">
+      <div class="game-modal bg-white shadow container p-5">
+        <p class="game-modal-head text-center">PAUSED</p>
+        <div class="">
+          <button class="d-block mx-auto btn-brand" id="resume-game"><i class="fas fa-play"></i> Resume</button>
+          <button class="d-block mx-auto btn-brand"> <i class="fas fa-redo-alt"></i> Restart</button>
+          <button class="d-block mx-auto btn-brand"><i class="fas fa-home"></i> Exit</button>
+        </div>
+      </div>
+    </div>
     <script src="game.js" async></script>
   </body>
 </html>

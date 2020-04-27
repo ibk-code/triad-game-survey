@@ -46,6 +46,8 @@ class QuestionStore {
   generateQuestion() {
     // this.constructor.shuffle();
     let questIndex = Math.floor(Math.random() * this.questions.length);
+    // console.log(questIndex);
+    console.log(this.questions);
     let askedQuestion = this.questions.splice(questIndex, 1)[0];
     this.askedQuestions.push(askedQuestion);
 
