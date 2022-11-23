@@ -9,7 +9,7 @@
   "author": "helloibk",
   "license": "ISC",
   "devDependencies": {
-    "browser-sync": "^2.26.7",
+    "browser-sync": "^2.27.10",
     "gulp": "^4.0.2",
     "gulp-abraia": "^0.6.9",
     "gulp-cache": "^1.1.3",
